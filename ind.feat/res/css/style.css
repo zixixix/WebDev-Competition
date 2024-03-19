@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    overflow-x: hidden;
+    color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    z-index: 1;
+}
+
+nav{
+    position: relative;
+    animation: slideTop;
+    animation-duration: 1s;
+    z-index: 2;
+}
+
+.nav-link{
+    color: #333;
+}
+
+#navConent{
+    z-index: 2;
+}
+
+.active a{
+    font-weight: 400;
+    font-style: bold;
+}
+
+.light-theme{
+    background-color: #FF87B7;
+    color: #333;
+}
+
+.dark-theme{
+    background-color: #333333;
+    color: #FF87B7;
+}
+
+#imgBoxRight{
+    opacity: 0%;
+    animation: slideLeft;
+    animation-delay: 500ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#imgBoxRight>img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    border: 1px solid #333333;
+}
+
+#infoBoxLeft{
+    padding-top: 12.5em !important;
+    opacity: 0%;
+    animation: slideRight;
+    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#infoBoxRight{
+    padding-top: 5em !important;
+    opacity: 0%;
+    animation: slideRight;
+    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#About{
+    opacity: 0;
+    animation: slideTop;
+    animation-delay: 750ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#OurStory{
+    opacity: 0;
+    animation: slideBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#OurStory img{
+    border: 1px solid #333;
+    border-radius: 500px;
+}
+
+#Portfolio{
+    margin-top: -5rem;
+}
+
+#socials{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+}
+
+#socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    transform: rotate(45deg) !important;
+    transition: .5s;
+}
+
+#socials a:hover{
+    border: 2px solid #333 !important;
+    cursor: pointer;
+}
+
+#socials a i{
+    transform: rotate(-45deg);
+
+}
